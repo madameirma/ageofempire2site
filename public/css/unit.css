@@ -1,0 +1,136 @@
+body {
+  background-color: #5a5a64;
+}
+
+body section {
+  height: 500px;
+  display: flex;
+  margin-top: 128px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body section div {
+  margin-top: 50px;
+  padding: 5px;
+  background-color: #5a5a64;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+body section div input[type=text] {
+  width: 200px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: #f5e5cb;
+}
+
+body section div input[type=text]:focus {
+  outline: none;
+}
+
+body section div input[type=text]::-webkit-input-placeholder {
+  color: lightsteelblue;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]::-moz-placeholder {
+  color: lightsteelblue;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:-ms-input-placeholder {
+  color: lightsteelblue;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]::-ms-input-placeholder {
+  color: lightsteelblue;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]::placeholder {
+  color: lightsteelblue;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::-webkit-input-placeholder {
+  color: #e6c81e;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::-moz-placeholder {
+  color: #e6c81e;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus:-ms-input-placeholder {
+  color: #e6c81e;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::-ms-input-placeholder {
+  color: #e6c81e;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::placeholder {
+  color: #e6c81e;
+  transition: color 0.5s;
+}
+
+body section div ul {
+  overflow: scroll;
+  height: 0px;
+  transition-duration: 0.5s;
+}
+
+body section div ul.deployed {
+  height: 300px;
+  transition: height 0.5s;
+}
+
+body section div ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+body section div ul::-webkit-scrollbar-button {
+  display: none;
+}
+
+body section div ul::-webkit-scrollbar-thumb {
+  background-color: #f5e5cb;
+  border-radius: 20px;
+}
+
+body section div ul::-webkit-scrollbar-corner {
+  display: none;
+}
+
+body section div ul li {
+  color: #f5e5cb;
+  font-size: 20px;
+  margin-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "Arial", sans-serif;
+}
+
+body section div ul li:hover {
+  cursor: pointer;
+  color: #e6c81e;
+}
+
+body section div ul li.first-active,
+body section div ul li.second-active {
+  color: #e6c81e;
+}
+

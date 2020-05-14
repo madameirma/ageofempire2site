@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);body {
+  background-color: #5a5a64;
+}
+
+body main {
+  margin-top: 140px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  color: #f5e5cb;
+}
+
+body main a {
+  text-decoration: none;
+  color: #f5e5cb;
+  font-family: "MedievalSharp", cursive;
+}
+
+body main a.btn {
+  font-family: "Arial", sans-serif;
+}
+
+body main section {
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+  width: 30%;
+  padding: 5px;
+}
+
+body main section.login {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+body main section form a {
+  text-decoration: none;
+  color: #f5e5cb;
+  padding-top: 5px;
+}
+
+body main section form label {
+  padding-bottom: 5px;
+}
+
+body main section form .rememberme {
+  padding-bottom: 10px;
+}
+
+body main section form input[type=text],
+body main section form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+body main section form input[type=text],
+body main section form input[type=email],
+body main section form input[type=password] {
+  font-size: 18px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid lightsteelblue;
+  color: #f5e5cb;
+  margin-bottom: 10px;
+}
+
+body main section form input[type=text]:focus,
+body main section form input[type=email]:focus,
+body main section form input[type=password]:focus {
+  outline: none;
+}
+
+body main section form input[type=text]::-webkit-input-placeholder, body main section form input[type=email]::-webkit-input-placeholder, body main section form input[type=password]::-webkit-input-placeholder {
+  color: lightsteelblue;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]::-moz-placeholder, body main section form input[type=email]::-moz-placeholder, body main section form input[type=password]::-moz-placeholder {
+  color: lightsteelblue;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]:-ms-input-placeholder, body main section form input[type=email]:-ms-input-placeholder, body main section form input[type=password]:-ms-input-placeholder {
+  color: lightsteelblue;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]::-ms-input-placeholder, body main section form input[type=email]::-ms-input-placeholder, body main section form input[type=password]::-ms-input-placeholder {
+  color: lightsteelblue;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]::placeholder,
+body main section form input[type=email]::placeholder,
+body main section form input[type=password]::placeholder {
+  color: lightsteelblue;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]:focus::-webkit-input-placeholder, body main section form input[type=email]:focus::-webkit-input-placeholder, body main section form input[type=password]:focus::-webkit-input-placeholder {
+  color: #e6c81e;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]:focus::-moz-placeholder, body main section form input[type=email]:focus::-moz-placeholder, body main section form input[type=password]:focus::-moz-placeholder {
+  color: #e6c81e;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]:focus:-ms-input-placeholder, body main section form input[type=email]:focus:-ms-input-placeholder, body main section form input[type=password]:focus:-ms-input-placeholder {
+  color: #e6c81e;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]:focus::-ms-input-placeholder, body main section form input[type=email]:focus::-ms-input-placeholder, body main section form input[type=password]:focus::-ms-input-placeholder {
+  color: #e6c81e;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body main section form input[type=text]:focus::placeholder,
+body main section form input[type=email]:focus::placeholder,
+body main section form input[type=password]:focus::placeholder {
+  color: #e6c81e;
+  transition: color 0.5s;
+}
+
+body main section form ul {
+  overflow: scroll;
+  height: 0px;
+  transition-duration: 0.5s;
+}
+
+body main section form ul.deployed {
+  height: 200px;
+  transition: height 0.5s;
+  padding: 5px;
+}
+
+body main section form ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+body main section form ul::-webkit-scrollbar-button {
+  display: none;
+}
+
+body main section form ul::-webkit-scrollbar-thumb {
+  background-color: #f5e5cb;
+  border-radius: 20px;
+}
+
+body main section form ul::-webkit-scrollbar-corner {
+  display: none;
+}
+
+body main section form ul li {
+  cursor: pointer;
+}
+
+body main section form ul li:hover {
+  color: #e6c81e;
+}
+
+body main section form input[type=submit] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: lightsteelblue;
+  border: none;
+  color: #5a5a64;
+  font-size: 20px;
+  padding: 5px;
+}
+
+body main section form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+body main section form textarea {
+  font-family: "Arial", sans-serif;
+  color: lightsteelblue;
+  resize: none;
+  background-color: transparent;
+  border: 1px solid lightsteelblue;
+  min-height: 200px;
+  height: 100%;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+body main section form textarea:focus {
+  color: #f5e5cb;
+  border: 1px solid #f5e5cb;
+}
+

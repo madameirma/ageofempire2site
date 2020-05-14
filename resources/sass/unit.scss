@@ -1,0 +1,94 @@
+@import 'colors';
+
+body {
+
+	background-color: $slategray;
+
+	section {
+
+		height: 500px;
+		display: flex;
+		margin-top: 128px;
+		justify-content: space-around;
+		align-items: center;
+
+		div {
+			margin-top: 50px;
+			padding: 5px;
+			background-color: $slategray;
+
+			box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+
+			input[type=text] {
+				
+				width: 200px;
+				font-size: 20px;
+				background-color: transparent;
+				border: none;
+				color: $papayawhip;
+
+				&:focus {
+					outline: none;
+				}
+
+				&::placeholder {
+					color: $lightsteelblue;
+					transition: color 0.5s;
+				}
+
+				&:focus::placeholder {
+					color: $goldenrod;
+					transition: color 0.5s;
+				}
+			}
+
+			ul {
+				overflow: scroll;
+				height: 0px;
+				transition-duration: 0.5s;
+
+				&.deployed {
+					height: 300px;
+					transition: height 0.5s;
+				}
+
+				&::-webkit-scrollbar {
+    				width: 10px;
+				}
+
+				&::-webkit-scrollbar-button {
+					display: none;
+				}
+
+				&::-webkit-scrollbar-thumb {
+					background-color: $papayawhip;
+					border-radius: 20px;
+				}
+
+				&::-webkit-scrollbar-corner {
+					display: none;
+				}
+
+				li {
+	
+					color: $papayawhip;
+					font-size: 20px;
+					margin-right: 5px;
+					padding-top: 2px;
+					padding-bottom: 2px;
+
+					font-family: 'Arial', sans-serif;
+
+					&:hover {
+						cursor: pointer;
+						color: $goldenrod;
+					}
+
+					&.first-active, &.second-active {
+						color: $goldenrod;
+					}
+				}
+			}
+		}
+	}
+}

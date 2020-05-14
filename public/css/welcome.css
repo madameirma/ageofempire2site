@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);body {
+  background-color: #5a5a64;
+}
+
+body video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  transform: scale(1.1, 1.1);
+}
+
+body a {
+  font-family: "MedievalSharp", cursive;
+  color: #f5e5cb;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+body img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+body div {
+  display: flex;
+  justify-content: space-around;
+}
+
+body div a {
+  text-decoration: none;
+  padding: 100px;
+  color: black;
+  font-size: 32px;
+  border: #f5e5cb 2px solid;
+  width: 150px;
+  color: #f5e5cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+body div a:hover {
+  border-radius: 0 25px 0 25px;
+  transition: all 0.5s;
+  transform: scale(1.1, 1.1);
+  border: #e6c81e 2px solid;
+  color: #e6c81e;
+}
+

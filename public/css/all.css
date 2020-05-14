@@ -1,0 +1,511 @@
+@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);body {
+  background-color: #5a5a64;
+}
+
+body section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 25px;
+  margin-top: 128px;
+  padding: 25px;
+}
+
+body section a {
+  text-decoration: none;
+  color: #f5e5cb;
+}
+
+body section a div {
+  font-family: "MedievalSharp", cursive;
+  position: relative;
+  padding: 25px;
+  height: 150px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: background-color 0.5s;
+  transition: border-radius 0.5s;
+}
+
+body section a div:hover {
+  background-color: rgba(110, 110, 120, 0.5);
+  border-radius: 0 25px 0 25px;
+  transition: all 0.5s;
+}
+
+body section a div:hover img {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+body section a div:hover p {
+  color: #f5e5cb;
+  transition: color 0.5s;
+}
+
+body section a div p {
+  text-align: center;
+  font-size: 26px;
+  color: transparent;
+  transition: color 0.5s;
+}
+
+body section a div p:nth-of-type(2) {
+  font-size: 22px;
+}
+
+body section a div img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+
+body {
+  background-color: #5a5a64;
+}
+
+body main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 128px;
+  color: #f5e5cb;
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+body main section {
+  padding: 20px;
+  width: 550px;
+}
+
+body main section h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+
+body main section div {
+  margin: 50px 0px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+body main section div img {
+  width: 25px;
+}
+
+body main section div h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "MedievalSharp", cursive;
+}
+
+body main section div p {
+  margin: 5px 0;
+}
+
+body main section .trivia {
+  display: flex;
+  padding: 0;
+}
+
+body main section .trivia div {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+body main section .trivia div:first-of-type {
+  margin: 10px;
+  width: 65%;
+}
+
+body main section .trivia div:last-of-type {
+  background-color: black;
+  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+  width: 35%;
+  min-height: 180px;
+}
+
+body main section .trivia div:last-of-type img {
+  display: block;
+  width: 180px;
+  margin-left: auto;
+}
+
+
+@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);nav {
+  font-family: "MedievalSharp", cursive;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 120px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 32px;
+  margin: 0px 20px;
+  color: #f5e5cb;
+  transition: color 0.5s;
+}
+
+nav a:first-of-type {
+  margin-right: 45%;
+  margin-left: 0;
+}
+
+nav a:hover {
+  color: #e6c81e;
+  transition: color 0.5s;
+}
+
+
+body {
+  background-color: #5a5a64;
+}
+
+body main {
+  margin-top: 130px;
+  padding: 10px;
+  color: #f5e5cb;
+}
+
+
+@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);body {
+  background-color: #5a5a64;
+  font-family: "Arial", sans-serif;
+  color: #f5e5cb;
+}
+
+body main {
+  margin-top: 140px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 30px;
+  text-align: center;
+  line-height: 2em;
+}
+
+body main h1 {
+  font-size: 36px;
+  display: inline-block;
+  font-family: "MedievalSharp", cursive;
+}
+
+body main > p {
+  font-size: 20px;
+}
+
+body main img {
+  width: 20px;
+}
+
+body main > div {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main div {
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+body main div h2 {
+  font-size: 26px;
+  font-family: "MedievalSharp", cursive;
+  padding-bottom: 20px;
+}
+
+body main div h2:nth-of-type(2) {
+  padding-top: 20px;
+}
+
+body main div div {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: none;
+}
+
+body main div div a {
+  text-decoration: none;
+  color: #f5e5cb;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 120px;
+  transition: transform 0.5s;
+}
+
+body main div div a:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s;
+}
+
+body main div div a img {
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main section {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body main section div {
+  width: 45%;
+  height: 400px;
+  overflow: auto;
+}
+
+body main section div::-webkit-scrollbar {
+  width: 10px;
+}
+
+body main section div::-webkit-scrollbar-button {
+  display: none;
+}
+
+body main section div::-webkit-scrollbar-thumb {
+  background-color: #f5e5cb;
+  border-radius: 20px;
+}
+
+body main section div::-webkit-scrollbar-corner {
+  display: none;
+}
+
+body main section div ul {
+  list-style: square inside;
+}
+
+
+body {
+  background-color: #5a5a64;
+}
+
+body section {
+  height: 500px;
+  display: flex;
+  margin-top: 128px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body section div {
+  margin-top: 50px;
+  padding: 5px;
+  background-color: #5a5a64;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+body section div input[type=text] {
+  width: 200px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: #f5e5cb;
+}
+
+body section div input[type=text]:focus {
+  outline: none;
+}
+
+body section div input[type=text]::-webkit-input-placeholder {
+  color: lightsteelblue;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]::-moz-placeholder {
+  color: lightsteelblue;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:-ms-input-placeholder {
+  color: lightsteelblue;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]::-ms-input-placeholder {
+  color: lightsteelblue;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]::placeholder {
+  color: lightsteelblue;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::-webkit-input-placeholder {
+  color: #e6c81e;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::-moz-placeholder {
+  color: #e6c81e;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus:-ms-input-placeholder {
+  color: #e6c81e;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::-ms-input-placeholder {
+  color: #e6c81e;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body section div input[type=text]:focus::placeholder {
+  color: #e6c81e;
+  transition: color 0.5s;
+}
+
+body section div ul {
+  overflow: scroll;
+  height: 0px;
+  transition-duration: 0.5s;
+}
+
+body section div ul.deployed {
+  height: 300px;
+  transition: height 0.5s;
+}
+
+body section div ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+body section div ul::-webkit-scrollbar-button {
+  display: none;
+}
+
+body section div ul::-webkit-scrollbar-thumb {
+  background-color: #f5e5cb;
+  border-radius: 20px;
+}
+
+body section div ul::-webkit-scrollbar-corner {
+  display: none;
+}
+
+body section div ul li {
+  color: #f5e5cb;
+  font-size: 20px;
+  margin-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "Arial", sans-serif;
+}
+
+body section div ul li:hover {
+  cursor: pointer;
+  color: #e6c81e;
+}
+
+body section div ul li.first-active,
+body section div ul li.second-active {
+  color: #e6c81e;
+}
+
+
+@import url(https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap);body {
+  background-color: #5a5a64;
+}
+
+body video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  transform: scale(1.1, 1.1);
+}
+
+body a {
+  font-family: "MedievalSharp", cursive;
+  color: #f5e5cb;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+body img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+body div {
+  display: flex;
+  justify-content: space-around;
+}
+
+body div a {
+  text-decoration: none;
+  padding: 100px;
+  color: black;
+  font-size: 32px;
+  border: #f5e5cb 2px solid;
+  width: 150px;
+  color: #f5e5cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+body div a:hover {
+  border-radius: 0 25px 0 25px;
+  transition: all 0.5s;
+  transform: scale(1.1, 1.1);
+  border: #e6c81e 2px solid;
+  color: #e6c81e;
+}
+

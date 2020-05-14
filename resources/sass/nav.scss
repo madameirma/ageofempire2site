@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'fonts';
+
+nav {
+
+	font-family: 'MedievalSharp', cursive;
+	position: fixed;
+	width: 100%; 
+	z-index: 2;
+	top: 0;
+	
+	background-color: $black;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+
+	img {
+		width: 120px;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 32px;
+		margin: 0px 20px;
+		color: $papayawhip;
+		transition: color 0.5s;
+
+		&:first-of-type {
+			margin-right: 45%;
+			margin-left: 0;
+		}
+
+		&:hover {
+			color: $goldenrod;
+			transition: color 0.5s
+		}
+	}
+
+}

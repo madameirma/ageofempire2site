@@ -1,0 +1,172 @@
+@import 'fonts';
+@import 'colors';
+
+body {
+
+	background-color: $slategray;
+
+	main {
+		margin-top: 140px;
+		margin-left: 20%;
+		margin-right: 20%;
+
+		display: flex;
+		justify-content: space-between;
+
+		font-family: 'Arial', sans-serif;
+		color: $papayawhip;
+
+		a {
+			text-decoration: none;
+			color: $papayawhip;
+			font-family: 'MedievalSharp', cursive;
+
+			&.btn {
+				font-family: 'Arial', sans-serif;
+			}
+		}
+
+		section {
+			box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+			width: 30%;
+			padding: 5px;
+
+			&.login {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			form {
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 100%;
+
+				a {
+					text-decoration: none;
+					color: $papayawhip;
+					padding-top: 5px;
+				}
+
+				label {
+					padding-bottom: 5px;
+				}
+
+				.rememberme {
+					padding-bottom: 10px;
+				}
+
+				input[type=text], textarea {
+					width: 100%;
+					box-sizing: border-box;
+					padding-top: 10px;
+				}
+
+				input[type=text], input[type=email], input[type=password] {
+
+					font-size: 18px;
+					padding: 5px;
+					background-color: transparent;
+					border:1px solid $lightsteelblue;
+					color: $papayawhip;
+					margin-bottom: 10px;
+
+					&:focus {
+						outline: none;
+					}
+
+					&::placeholder {
+						color: $lightsteelblue;
+						transition: color 0.5s;
+					}
+
+					&:focus::placeholder {
+						color: $goldenrod;
+						transition: color 0.5s;
+					}
+
+				}
+
+				ul {
+
+					overflow: scroll;
+					height: 0px;
+					transition-duration: 0.5s;
+
+					&.deployed {
+						height: 200px;
+						transition: height 0.5s;
+						padding: 5px;
+					}
+
+					&::-webkit-scrollbar {
+	    				width: 10px;
+					}
+
+					&::-webkit-scrollbar-button {
+						display: none;
+					}
+
+					&::-webkit-scrollbar-thumb {
+						background-color: $papayawhip;
+						border-radius: 20px;
+					}
+
+					&::-webkit-scrollbar-corner {
+						display: none;
+					}
+
+					li {
+						cursor: pointer;
+
+						&:hover {
+							color: $goldenrod;
+						}
+					}
+
+				}
+
+				input[type=submit] {
+
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+
+					width: 100%;
+					background-color: $lightsteelblue;
+					border: none;
+					color: $slategray;
+					font-size: 20px;
+					padding: 5px;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+
+				textarea {
+
+					font-family: 'Arial', sans-serif;
+					color: $lightsteelblue;
+
+					resize: none;
+					background-color: transparent;
+					border: 1px solid $lightsteelblue;
+					min-height: 200px;
+					height: 100%;
+					outline: none;
+					
+					margin-top: 5px;
+					margin-bottom: 5px;
+					padding: 5px;
+
+					&:focus {
+						color: $papayawhip;
+						border: 1px solid $papayawhip;
+					}
+				}
+			}
+		}
+	}
+}
