@@ -12,6 +12,8 @@
 
 						<input type="text" id="firstCiv" name="name" autocomplete="off" placeholder="Choose a civilization">
 
+						<input type="hidden" name="id" value="">
+
 						<ul id="firstList">
 							
 							@foreach ($civsInfos as $civ)
@@ -42,6 +44,8 @@
 
 						<input type="text" name="name" id="secondCiv" autocomplete="off" placeholder="Choose a civilization">
 
+						<input type="hidden" name="id" value="">
+
 						<ul id="secondList">
 							
 							@foreach ($civsInfos as $civ)
@@ -71,6 +75,8 @@
 					<div>
 
 						<input type="text" name="name" id="thirdCiv" autocomplete="off" placeholder="Choose a civilization">
+
+						<input type="hidden" name="id" value="">
 
 						<ul id="thirdList">
 							

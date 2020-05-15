@@ -65,7 +65,8 @@ class HomeController extends Controller {
 
     public function insertDesc(Request $request) {
 
-        $civilization = new Civilizations;
+        $civilization = new Civilizations; 
+        $civilization->id = $request->id;
         $civilization->name = $request->input('name');
         $civilization->desc = $request->input('desc');
         $civilization->save(); 
@@ -76,8 +77,9 @@ class HomeController extends Controller {
 
     public function updateDesc(Request $request) {
 
-        $civilization = civilizations::find($request->input('name'));
-        $civilization->desc = $request->input('desc');
+        $civilization = civilizations::where('name', $request->name)->first();
+        $civilization->id = $request->id;
+        $civilization->desc = $request->desc;
         $civilization->save();
 
         return view('post-form');

@@ -52,16 +52,22 @@ export default class CivSelection {
 			$('body').on('click', '#firstList li', function() {
 				let civ = $(this).text();
 				$('#firstCiv').val(civ);
+				let id = $(this).attr('data-id');
+				$('#firstCiv+input[type=hidden]').val(id);
 			});
 
 			$('body').on('click', '#secondList li', function() {
 				let civ = $(this).text();
 				$('#secondCiv').val(civ);
+				let id = $(this).attr('data-id');
+				$('#secondCiv+input[type=hidden]').val(id);
 			});
 
 			$('body').on('click', '#thirdList li', function() {
 				let civ = $(this).text();
 				$('#thirdCiv').val(civ);
+				let id = $(this).attr('data-id');
+				$('#thirdCiv+input[type=hidden]').val(id);
 			});
 
 		})
